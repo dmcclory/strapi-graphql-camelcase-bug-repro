@@ -1,0 +1,23 @@
+
+
+module.exports = {
+
+  resolver: { 
+    Query: {
+      movie: {
+        resolver: "movie.findOne",
+        policies: [
+          "global.ownershipPolicy"
+        ]
+      }
+    },
+    Mutation: {
+      updateMovie: {
+        resolver: "movie.update",
+        policies: [
+          "global.ownershipPolicy"
+        ]
+      }
+    }
+  }
+}
