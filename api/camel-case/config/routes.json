@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/camel-cases",
+      "handler": "camel-case.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/camel-cases/count",
+      "handler": "camel-case.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/camel-cases/:id",
+      "handler": "camel-case.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/camel-cases",
+      "handler": "camel-case.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/camel-cases/:id",
+      "handler": "camel-case.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/camel-cases/:id",
+      "handler": "camel-case.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

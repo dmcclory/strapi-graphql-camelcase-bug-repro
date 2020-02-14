@@ -1,0 +1,23 @@
+
+
+module.exports = {
+
+  resolver: { 
+    Query: {
+      camelCase: {
+        resolver: "camel-case.findOne",
+        policies: [
+          "global.ownershipPolicy"
+        ]
+      }
+    },
+    Mutation: {
+      updateCamelCase: {
+        resolver: "camel-case.update",
+        policies: [
+          "global.ownershipPolicy"
+        ]
+      }
+    }
+  }
+}

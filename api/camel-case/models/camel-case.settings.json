@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "camelCase"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "camel_cases"
+}
